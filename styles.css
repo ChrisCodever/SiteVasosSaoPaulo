@@ -1,0 +1,226 @@
+ :root {
+    --primary-color: #2B5D34;
+    --secondary-color: #E6F4E6;
+    --text-color: #F4D06F;
+    --accent-color: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Brook'; /* Nome da fonte para usar no CSS */
+    src: url('/fontes/Brookliness.otf') format('woff'); /* Caminho para o arquivo */
+    font-weight: normal; /* (Opcional) Define o peso da fonte */
+    font-style: normal;  /* (Opcional) Define o estilo da fonte */
+
+   font-family: 'padraoEscrita'; /* Nome da fonte para usar no CSS */
+    src: url('/fontes/BrookfieldDemoRegular.ttf') format('woff');
+}
+
+
+
+.logotitulo {
+    font-family: Brook;
+    color: var(--primary-color);
+}
+
+.logo {
+    max-width: 350px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: padraoEscrita;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+ul {
+    background-color: #4f8659;
+    padding: 6px;
+    margin: 0px;
+    width: 100%
+    
+}
+
+ 
+
+header {
+    /* background: var(--secondary-color); */
+  
+    background-image: url(/images/fundoHeader2.jpg);
+    /* background-size: 100%; */
+    /* background-position: center; */
+    background-size: contain;
+}
+
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0.5rem;
+
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+     
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: url('https://img.freepik.com/fotos-gratis/mosaico-de-marmore-material-material-duravel_1253-850.jpg?t=st=1733148340~exp=1733151940~hmac=f197be3596a678b9d80558e2950238206a393c53a122bf39a753a10521ee46b2&w=740') no-repeat center center/cover;
+      /* acima imagem de marmore do site  */
+    color: var(--text-color);
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: var(--text-color);
+    color: var(--accent-color);
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.grid .item img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    max-height: 390px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: var(--text-color);
+    color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--secondary-color);
+    margin-top: 2rem;
+}
+
+
+
+/* EFEITO JAVASCRIPT */
+
+a{
+    position: relative; /* Para posicionar as folhas em relação ao link */
+}
+.folha {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('/images/folhas\ .png') no-repeat center / contain; /* Substitua pelo caminho correto */
+    animation: cair 2s linear forwards;
+    pointer-events: none; /* Evita que interfira com o mouse */
+}
+
+/* Animação de queda */
+@keyframes cair {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0px, 100px) rotate(360deg);
+    }
+}
+
+.FundoContato {
+    
+
+
+     max-width: 600px;
+      width: 90%;
+      background-color: #f3ecad;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      justify-content: center;
+       color: #2B5D34;
+ 
+}
