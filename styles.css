@@ -60,7 +60,7 @@ ul {
 header {
     /* background: var(--secondary-color); */
   
-    background-image: url(/images/fundoHeader2.jpg);
+    background-image: url(./images/fundoHeader2.jpg);
     /* background-size: 100%; */
     /* background-position: center; */
     background-size: contain;
@@ -192,7 +192,7 @@ a{
     position: absolute;
     width: 20px;
     height: 20px;
-    background: url('/images/folhas\ .png') no-repeat center / contain; /* Substitua pelo caminho correto */
+    background: url('./images/folhas\ .png') no-repeat center / contain; /* Substitua pelo caminho correto */
     animation: cair 2s linear forwards;
     pointer-events: none; /* Evita que interfira com o mouse */
 }
