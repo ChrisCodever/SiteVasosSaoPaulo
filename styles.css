@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: 'Brook'; /* Nome da fonte para usar no CSS */
-    src: url('/fontes/Brookliness.otf') format('woff'); /* Caminho para o arquivo */
+    src: url('./fontes/Brookliness.otf') format('woff'); /* Caminho para o arquivo */
     font-weight: normal; /* (Opcional) Define o peso da fonte */
     font-style: normal;  /* (Opcional) Define o estilo da fonte */
 
    font-family: 'padraoEscrita'; /* Nome da fonte para usar no CSS */
-    src: url('/fontes/BrookfieldDemoRegular.ttf') format('woff');
+    src: url('./fontes/BrookfieldDemoRegular.ttf') format('woff');
 }
 
 
