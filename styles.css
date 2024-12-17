@@ -47,6 +47,21 @@ body {
     padding: 8px;
 }
 
+.TextoCenter {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px;
+
+    /* Alinhamento central */
+    display: flex;
+    flex-direction: column; /* Mantém os textos empilhados, caso necessário */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Alinha o texto dentro dos elementos */
+}
+
+
 ul {
     background-color: #4f8659;
     padding: 6px;
@@ -213,21 +228,7 @@ a{
     }
 }
 
-.FundoContato {
-    
-
-
-     max-width: 600px;
-      width: 90%;
-      background-color: #f3ecad;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      justify-content: center;
-       color: #2B5D34;
  
-}
 
 .footerP {
 
