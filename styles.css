@@ -23,8 +23,16 @@
 }
 
 .logo {
-    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    max-height: 390px;
+    
 }
+
+
+
 
 * {
     margin: 0;
@@ -62,11 +70,19 @@ body {
 }
 
 
-ul {
+nav   {
     background-color: #4f8659;
     padding: 6px;
     margin: 0px;
     width: 100%
+
+
+
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    max-height: 390px;
     
 }
 
@@ -77,8 +93,9 @@ header {
   
     background-image: url(./images/fundoHeader2.jpg);
     /* background-size: 100%; */
-    /* background-position: center; */
+    /* background-position: center ; */
     background-size: contain;
+    /* background-repeat: no-repeat; */
 }
 
 
@@ -157,11 +174,7 @@ section h2 {
     gap: 1rem;
 }
 
- .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px; /* Espaçamento entre as imagens */
-}
+
 
 .grid .item img {
     width: 100%;
