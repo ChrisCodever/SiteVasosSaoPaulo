@@ -10,31 +10,31 @@
  
 
 @font-face {
-    font-family: 'Brook'; /* Nome da fonte para usar no CSS */
-    src: url('./fontes/Brookliness.otf') format('woff'); /* Caminho para o arquivo */
-    font-weight: normal; /* (Opcional) Define o peso da fonte */
-    font-style: normal;  /* (Opcional) Define o estilo da fonte */
+    font-family: 'Brook';  
+    src: url('./fontes/Brookliness.otf') format('woff');  
+    font-weight: normal;  
+    font-style: normal;   
 
-   font-family: 'padraoEscrita'; /* Nome da fonte para usar no CSS */
+   font-family: 'padraoEscrita';  
     src: url('./fontes/BrookfieldDemoRegular.ttf') format('woff');
 
-     font-family: 'kalan'; /* Nome da fonte para usar no CSS */
+     font-family: 'kalan';  
     src: url('./fontes/Kalam-Bold.ttf') format('woff');
 }
 
 
 
-.logotitulo {
+/* .logotitulo {
     font-family: Brook;
     color: var(--primary-color);
-}
+} */
 
 .logo {
-    width: 100%;
+    width: 90dvh;
     height: auto;
     border-radius: 10px;
     padding: 5px;
-    max-height: 390px;
+    /* max-height: 390px; */
     
 }
 
@@ -45,11 +45,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: padraoEscrita;
+    font-family: 'padraoEscrita';
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:  'Brook';
     background-color: var(--primary-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -84,10 +84,9 @@ nav   {
     width: 100%
 
 
-
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    
+    /* height: auto; */
+    /* border-radius: 10px; */
     padding: 5px;
     max-height: 390px;
     
@@ -121,6 +120,7 @@ header nav ul {
 
 header nav ul li {
     margin: 0 1rem;
+     
 }
 
 header nav ul li a {
@@ -128,11 +128,16 @@ header nav ul li a {
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s;
+    
      
 }
 
 header nav ul li a:hover {
     color: var(--accent-color);
+}
+
+h2 a p {
+    font-family: 'padraoEscrita';
 }
 
 .hero {
@@ -146,6 +151,7 @@ header nav ul li a:hover {
 .hero h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+     
 }
 
 .hero .btn {
@@ -288,7 +294,7 @@ font-size: 2rem;
 
     .valor {
         font-size: 3dvh;
-        font-family:  tahoma ;
+        /* font-family:  tahoma ; */
         
 
     }
@@ -311,3 +317,5 @@ font-size: 2rem;
   font-weight: bold;
   font-family: kalan;
 }
+
+ 
