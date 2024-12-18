@@ -5,6 +5,10 @@
     --accent-color: #FFFFFF;
 }
 
+ 
+ 
+ 
+
 @font-face {
     font-family: 'Brook'; /* Nome da fonte para usar no CSS */
     src: url('./fontes/Brookliness.otf') format('woff'); /* Caminho para o arquivo */
@@ -13,6 +17,9 @@
 
    font-family: 'padraoEscrita'; /* Nome da fonte para usar no CSS */
     src: url('./fontes/BrookfieldDemoRegular.ttf') format('woff');
+
+     font-family: 'kalan'; /* Nome da fonte para usar no CSS */
+    src: url('./fontes/Kalam-Bold.ttf') format('woff');
 }
 
 
@@ -246,4 +253,61 @@ a{
 .footerP {
 
     color: black;
+     
+}
+
+  
+
+ .promo {
+font-family: kalan ;
+
+font-size: 2rem;
+      font-weight: bold;
+       
+      color: yellow;
+      text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px orange, 0 0 40px red;
+      animation: glow 2s infinite;
+  
+}
+
+@keyframes glow {
+      0% {
+        color: yellow;
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px orange, 0 0 40px red;
+      }
+      50% {
+        color: orange;
+        text-shadow: 0 0 15px orange, 0 0 25px red, 0 0 35px red, 0 0 50px crimson;
+      }
+      100% {
+        color: red;
+        text-shadow: 0 0 10px red, 0 0 20px crimson, 0 0 30px darkred, 0 0 40px darkred;
+      }
+    }
+
+
+    .valor {
+        font-size: 3dvh;
+        font-family:  tahoma ;
+        
+
+    }
+
+    .risco {
+  color: red;
+  text-decoration: line-through;
+  font-family: kalan;
+}
+
+.preto {
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: kalan;
+}
+
+.amarelo {
+  color: yellow;
+  font-weight: bold;
+  font-family: kalan;
 }
