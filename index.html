@@ -19,7 +19,10 @@
 <body>
   <header>
     <div class="container">
-      <img src="./images/v logo.png" alt="" class="logo">
+      <div class="logotopo">
+        <img class="logopng" src="/images/vsplogopng.png" alt="">
+        <h3> Vasos São Paulo</h3>
+      </div>
 
 
       <nav>
@@ -36,15 +39,16 @@
   </header>
 
   <section id="home" class="hero">
-    <h2>Esculturas e Vasos Exclusivos</h2>
-    <p>Transforme seu espaço com arte única e elegante.</p>
-    <a href="#gallery" class="btn">Ver Galeria</a>
+    <h2 class="font1">Esculturas e Vasos Exclusivos</h2>
+    <p class="font2">Transforme seu espaço com arte única e elegante.</p>
+    <a href="#gallery" class="btn" class="fonttit">Ver Galeria</a>
   </section>
 
   <section id="about">
     <div class="TextoCenter">
-      <h2>Sobre Nós</h2>
-      <p> Na Vasos São Paulo, criamos peças que combinam atenção meticulosa aos detalhes com uma verdadeira paixão pela
+      <h2 class="font1">Sobre Nós</h2>
+      <p class="font2"> Na Vasos São Paulo, criamos peças que combinam atenção meticulosa aos detalhes com uma
+        verdadeira paixão pela
         arte. Cada
         escultura e vaso é uma obra única, perfeita para dar um toque especial à sua decoração ou para presentear alguém
         especial. E mais: você pode personalizar o seu vaso ou escultura, escolhendo a paleta de cores que melhor se
@@ -55,7 +59,7 @@
 
   <section id="gallery">
     <div class="container">
-      <h2>Galeria</h2>
+      <h2 class="font1">Galeria</h2>
       <h2 class="promo">PROMOÇÃO DE NATAL</h2>
 
 
@@ -69,7 +73,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$499</span>
           </P>
-          <img src="./images/PanteraBranca.jpg" alt="Escultura 1">
+          <img src="./images/PanteraBranca.jpg" alt="Escultura 1" onclick="openModal(this)">
 
         </div>
         <div class="item">
@@ -79,7 +83,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$99</span>
           </P>
-          <img src="./images/CorujaMogno.jpg" alt="Escultura 2">
+          <img src="./images/CorujaMogno.jpg" alt="Escultura 2" onclick="openModal(this)">
         </div>
         <div class="item">
           <P class="valor">
@@ -88,7 +92,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$359</span>
           </P>
-          <img src="./images/VasoAzulVIet.jpg" alt="Vaso 1">
+          <img src="./images/VasoAzulVIet.jpg" alt="Vaso 1" onclick="openModal(this)">
         </div>
         <div class="item">
           <P class="valor">
@@ -97,7 +101,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$299</span>
           </P>
-          <img src="./images/Cachepot01.jpg" alt="Vaso 2">
+          <img src="./images/Cachepot01.jpg" alt="Vaso 2" onclick="openModal(this)">
         </div>
 
         <div class="item">
@@ -107,7 +111,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$99</span>
           </P>
-          <img src="./images/CorujaPreta.jpg" alt="Escultura 1">
+          <img src="./images/CorujaPreta.jpg" alt="Escultura 1" onclick="openModal(this)">
         </div>
         <div class="item">
           <P class="valor">
@@ -116,7 +120,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$299</span>
           </P>
-          <img src="./images/VasoMenorAzul.jpg" alt="Escultura 2">
+          <img src="./images/VasoMenorAzul.jpg" alt="Escultura 2" onclick="openModal(this)">
         </div>
         <div class="item">
           <P class="valor">
@@ -125,7 +129,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$499</span>
           </P>
-          <img src="./images/PanteraMalhada.jpg" alt="Vaso 1">
+          <img src="./images/PanteraMalhada.jpg" alt="Vaso 1" onclick="openModal(this)">
         </div>
         <div class="item">
           <P class="valor">
@@ -134,7 +138,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$359</span>
           </P>
-          <img src="./images/VasoMarrom.jpg" alt="Vaso 2">
+          <img src="./images/VasoMarrom.jpg" alt="Vaso 2" onclick="openModal(this)">
         </div>
 
         <div class="item">
@@ -144,7 +148,7 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$149</span>
           </P>
-          <img src="./images/Pantera negra 61.jpg" alt="Escultura 1">
+          <img src="./images/Pantera negra 61.jpg" alt="Escultura 1" onclick="openModal(this)">
         </div>
         <div class="item">
           <P class="valor">
@@ -153,16 +157,16 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$299</span>
           </P>
-          <img src="./images/cachepot 03.jpg" alt="Escultura 2">
+          <img src="./images/cachepot 03.jpg" alt="Escultura 2" onclick="openModal(this)">
         </div>
         <div class="item">
           <P class="valor">
             <span class="preto">De</span>
-            <span class="risco"> R$149</span>
+            <span class="risco"> R$189</span>
             <span class="preto">POR</span>
-            <span class="amarelo">R$99</span>
+            <span class="amarelo">R$149</span>
           </P>
-          <img src="./images/Buda.jpg" alt="Vaso 1">
+          <img src="./images/Buda.jpg" alt="Vaso 1" onclick="openModal(this)">
         </div>
 
         <div class="item">
@@ -172,9 +176,16 @@
             <span class="preto">POR</span>
             <span class="amarelo">R$499</span>
           </P>
-          <img src="./images/PanteraNegra.jpg" alt="Vaso 2">
+          <img src="./images/PanteraNegra.jpg" alt="Vaso 2" onclick="openModal(this)">
         </div>
 
+
+
+        <div id="imageModal" class="modal" onclick="closeModal()">
+          <div class="modal-content">
+            <img id="modalImage" src="" alt="Imagem em destaque">
+          </div>
+        </div>
 
       </div>
     </div>
@@ -182,11 +193,13 @@
 
   <section id="contact">
     <div class="TextoCenter">
-      <h2>Contato</h2>
+      <h2 class="font1">Contato</h2>
 
-      <p>Christian Orsogna (11) 97651 9575</p>
+      <p class="font5">Christian Orsogna (11) 97651 9575</p>
       <br>
-      <p>Marcelo Garcia (11) 98461 3570</p>
+      <p class="font5">Marcelo Garcia (11) 98461 3570</p>
+      <br>
+      <img class="imagewhats" src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-png.png" alt="">
 
 
     </div>
