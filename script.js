@@ -1,40 +1,25 @@
-
-function openModal(image) {
-  const modal = document.getElementById("imageModal");
-  const modalImage = document.getElementById("modalImage");
-  modalImage.src = image.src;
-  modal.style.display = "flex";
-}
-
-function closeModal() {
-  const modal = document.getElementById("imageModal");
-  modal.style.display = "none";
-}
-
-
-
-// Função para criar uma folha
 function criarFolha(event) {
   const link = event.target; // O link onde o mouse está
-  const folha = document.createElement('div');
-  folha.classList.add('folha');
+  const folha = document.createElement('img'); // Criando uma imagem
+  folha.src = './images/folhas.png'; // Caminho para a imagem da folha
+  folha.alt = 'Folha'; // Texto alternativo para acessibilidade
+  folha.classList.add('folha'); // Adiciona a classe para estilização e animação
 
-  // Define posição inicial aleatória
-  folha.style.left = `${Math.random() * link.offsetWidth}px`;
+  // Define posição inicial aleatória dentro do link
+  const linkRect = link.getBoundingClientRect();
+  folha.style.left = `${Math.random() * linkRect.width}px`;
   folha.style.top = `0px`;
 
-  // Adiciona a folha ao link
-  link.appendChild(folha);
+  // Define a posição relativa ao link
+  folha.style.position = 'absolute';
+  link.style.position = 'relative'; // Garante que o link é um contêiner posicionado
+  link.appendChild(folha); // Adiciona a folha ao link
 
   // Remove a folha após a animação terminar
   folha.addEventListener('animationend', () => folha.remove());
 }
 
-// Seleciona todos os links e adiciona o evento
-document.querySelectorAll('a').forEach(link => {
+// Adiciona o evento de mouseover a todos os links
+document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('mouseover', criarFolha);
 });
-
-
-
-

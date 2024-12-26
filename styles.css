@@ -268,24 +268,7 @@ footer {
 
 
 
-/* EFEITO JAVASCRIPT */
-
-a{
-    position: relative; /* Para posicionar as folhas em relação ao link */
-}
  
-
-/* Animação de queda */
-@keyframes cair {
-    0% {
-        opacity: 1;
-        transform: translate(0, 0) rotate(0deg);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(0px, 100px) rotate(360deg);
-    }
-}
 
  
 
@@ -411,18 +394,19 @@ h3 {
 }
 
 
+ 
 .folha {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: green;
-  border-radius: 50%;
-  animation: cair 2s linear forwards;
+  width: 30%;
+  /*Ajusteotamanhodafolha*/height: 20px;
+  pointer-events: none;
+  /*Garantequeasfolhasnãointerferemnomouse*/animation: cair 2s linear forwards;
+  -webkit-animation: cair 2s linear forwards;
 }
 
 @keyframes cair {
   to {
-    transform: translateY(200px);
-    opacity: 0;
+    transform: translateY(200px); /* Queda vertical */
+    opacity: 0; /* Desaparece gradualmente */
   }
 }
