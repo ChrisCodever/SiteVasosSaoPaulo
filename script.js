@@ -1,3 +1,18 @@
+
+function openModal(image) {
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  modalImage.src = image.src;
+  modal.style.display = "flex";
+}
+
+function closeModal() {
+  const modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+}
+
+
+
 // Função para criar uma folha
 function criarFolha(event) {
   const link = event.target; // O link onde o mouse está
@@ -23,14 +38,3 @@ document.querySelectorAll('a').forEach(link => {
 
 
 
-function openModal(image) {
-  const modal = document.getElementById("imageModal");
-  const modalImage = document.getElementById("modalImage");
-  modalImage.src = image.src;
-  modal.style.display = "flex";
-}
-
-function closeModal() {
-  const modal = document.getElementById("imageModal");
-  modal.style.display = "none";
-}
